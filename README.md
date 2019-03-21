@@ -16,7 +16,7 @@ You can use this in your terraform template with the following steps.
 
    ```
    module "bandwidth_package" {
-     source = "terraform-alicloud-modules/cen_bandwidth/alicloud"
+     source = "terraform-alicloud-modules/cen-bandwidth/alicloud"
    
      name                          = "bandwidth-package-name"
      bandwidth                     = 5
