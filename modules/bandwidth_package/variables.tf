@@ -8,7 +8,7 @@ variable "bandwidth" {
 
 variable "geographic_region_ids" {
   description = "List of the two areas to connect, like [\"China\", \"China\"]."
-  type        = "list"
+  type        = list(string)
 }
 
 variable "charge_type" {
@@ -24,3 +24,4 @@ variable "new_bandwidth_package" {
   description = "Whether to create a CEN bandwidth package."
   default     = false
 }
+

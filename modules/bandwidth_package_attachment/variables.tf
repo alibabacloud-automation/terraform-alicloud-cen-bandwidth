@@ -10,3 +10,4 @@ variable "attach_bandwidth_package" {
   description = "Whether to attach the CEN bandwidth package to one CEN instance."
   default     = false
 }
+
