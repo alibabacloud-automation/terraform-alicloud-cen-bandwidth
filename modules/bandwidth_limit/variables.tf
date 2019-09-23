@@ -4,7 +4,7 @@ variable "instance_id" {
 
 variable "region_ids" {
   description = "List of the two regions to interconnect."
-  type        = "list"
+  type        = list(string)
 }
 
 variable "bandwidth_limit" {
@@ -15,3 +15,4 @@ variable "set_bandwidth_limit" {
   description = "Whether to set the bandwidth limit."
   default     = false
 }
+

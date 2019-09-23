@@ -1,3 +1,8 @@
+variable "region" {
+  description = "The region used to launch this module resources."
+  default     = ""
+}
+
 variable "name" {
   description = "Name of the CEN bandwidth package."
 }
@@ -8,7 +13,7 @@ variable "bandwidth" {
 
 variable "geographic_region_ids" {
   description = "List of the two areas to connect, like [\"China\", \"China\"]."
-  type        = "list"
+  type        = list(string)
 }
 
 variable "charge_type" {
@@ -41,7 +46,7 @@ variable "attach_bandwidth_package" {
 
 variable "region_ids" {
   description = "List of the two regions to interconnect."
-  type        = "list"
+  type        = list(string)
 }
 
 variable "bandwidth_limit" {
@@ -52,3 +57,4 @@ variable "set_bandwidth_limit" {
   description = "Whether to set the bandwidth limit."
   default     = false
 }
+
