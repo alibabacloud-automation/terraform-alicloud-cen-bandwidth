@@ -11,3 +11,11 @@ variable "attach_bandwidth_package" {
   default     = false
 }
 
+variable "region_ids" {
+  description = "List of the two regions to interconnect."
+  type        = list(string)
+}
+
+variable "name" {
+  description = "The name of the CEN instance."
+}

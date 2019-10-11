@@ -3,7 +3,7 @@ module "cen_bandwidth" {
   name                  = "bandwidth-package-name"
   bandwidth             = 5
   geographic_region_ids = ["China", "China"]
-  charge_type           = "PrePaid"
+  charge_type           = "PostPaid"
   new_bandwidth_package = true
   instance_id           = "cen-xxx"
 

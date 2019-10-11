@@ -18,6 +18,7 @@ variable "geographic_region_ids" {
 
 variable "charge_type" {
   description = "The billing method. Valid value: PostPaid, PrePaid."
+  default     = "PostPaid"
 }
 
 variable "period" {
@@ -32,6 +33,7 @@ variable "new_bandwidth_package" {
 
 variable "instance_id" {
   description = "The ID of the CEN instance."
+  default     = ""
 }
 
 variable "bandwidth_package_id" {
