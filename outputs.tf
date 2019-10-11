@@ -1,3 +1,24 @@
+
+output "this_name" {
+  value = module.bandwidth_package.this_bandwidth_package_name
+}
+
+output "this_bandwidth" {
+  value = module.bandwidth_package.this_bandwidth
+}
+
+output "this_geographic_region_ids" {
+  value = module.bandwidth_package.this_geographic_region_ids
+}
+
+output "this_charge_type" {
+  value = module.bandwidth_package.this_charge_type
+}
+
+output "this_period" {
+  value = module.bandwidth_package.this_period
+}
+
 output "this_instance_id" {
   description = "The ID of the CEN instance"
   value       = module.bandwidth_package_attachment.this_instance_id

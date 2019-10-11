@@ -29,6 +29,8 @@ module "bandwidth_package_attachment" {
 
   instance_id          = var.instance_id
   bandwidth_package_id = var.bandwidth_package_id != "" ? var.bandwidth_package_id : module.bandwidth_package.this_bandwidth_package_id
+  region_ids           = var.region_ids
+  name                 = var.name
 }
 
 ######################
