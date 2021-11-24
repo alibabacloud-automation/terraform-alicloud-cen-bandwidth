@@ -1,12 +1,3 @@
-########################
-# CEN bandwidth package
-########################
-provider "alicloud" {
-  version              = ">=1.56.0"
-  region               = var.region != "" ? var.region : null
-  configuration_source = "terraform-alicloud-modules/cen-bandwidth"
-}
-
 module "bandwidth_package" {
   source = "./modules/bandwidth_package"
 
