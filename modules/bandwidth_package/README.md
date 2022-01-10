@@ -6,8 +6,11 @@
 | :-------------------- | :---------------------------------------------- | ------ | ------------------------ | -------- |
 | name                  | The name of the CEN bandwidth package.          | string | null                     | yes      |
 | bandwidth             | The bandwidth in Mbps of the bandwidth package. | int    | null                     | yes      |
-| geographic_region_ids | List of the two areas to connect.               | list   | null                     | yes      |
-| charge_type           | The billing method. Valid value: PostPaid, PrePaid. | string | null                 | yes      |
+| geographic_region_a_id| The area A to which the network instance belongs. | string    | null                | yes      |
+| geographic_region_b_id| The area B to which the network instance belongs. | string    | null                | yes      |
+| payment_type          | The billing method. Valid value: PostPaid, PrePaid. | string    | "PostPaid"        | no       |
+| geographic_region_ids | (Deprecated from version 1.3.0) List of the two areas to connect.| list   | null     | yes      |
+| charge_type           | (Deprecated from version 1.3.0) The billing method. Valid value: PostPaid, PrePaid. | string | null | yes      |
 | period                | The purchase period in month.                   | int    | 1                        | no       |
 | new_bandwidth_package | Whether to create a CEN bandwidth package.      | boolean| false                    | no       |
 

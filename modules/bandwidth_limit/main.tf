@@ -5,4 +5,3 @@ resource "alicloud_cen_bandwidth_limit" "this" {
   region_ids      = var.region_ids
   bandwidth_limit = var.bandwidth_limit
 }
-
