@@ -17,4 +17,3 @@ output "this_bandwidth_limit" {
   description = "The bandwidth configured for the interconnected regions communication."
   value       = module.bandwidth_limit.this_bandwidth_limit
 }
-

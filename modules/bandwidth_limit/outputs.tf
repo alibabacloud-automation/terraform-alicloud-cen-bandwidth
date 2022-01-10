@@ -12,4 +12,3 @@ output "this_bandwidth_limit" {
   description = "The bandwidth configured for the interconnected regions communication."
   value       = var.bandwidth_limit
 }
-

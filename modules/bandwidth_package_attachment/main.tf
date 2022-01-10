@@ -4,4 +4,3 @@ resource "alicloud_cen_bandwidth_package_attachment" "this" {
   instance_id          = var.instance_id
   bandwidth_package_id = var.bandwidth_package_id
 }
-
